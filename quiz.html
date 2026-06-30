@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+<h1>HTML Quiz</h1>
+<p>Time Left: <span id="timer">60</span> seconds</p>
+<form id="quizForm">
+    <h3>1. HTML stands for?</h3>
+    <label id="op1">
+<input type="radio" name="q1" value="a">
+Hyper Text Markup Language
+</label><br>
+<label id="op2">
+<input type="radio" name="q1" value="b">
+High Text Machine Language
+</label><br>
+<label id="op3">
+<input type="radio" name="q1" value="c">
+Home Tool Markup Language
+</label><br>
+    <button type="button" onclick="checkAnswer()">Submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

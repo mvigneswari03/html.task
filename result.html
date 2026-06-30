@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> onload="checkLogin()">
+    <h1>Quiz Result</h1>
+    <h2 id="score"></h2>
+    <button onclick="window.location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+</div>
+<script>
+document.getElementById("score").innerHTML =
+"Your Score: " + sessionStorage.getItem("score") + "/1";
+</script>
+</body>
+</html>
